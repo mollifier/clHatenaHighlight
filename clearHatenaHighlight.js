@@ -5,9 +5,7 @@
     onReady: function(widget) {
       $(widget).click(function() {
         $(jetpack.tabs.focused.contentDocument).
-          find("a").each(function() {
-            $(this).replaceWith($(this).html());
-          });
+          find("span.highlight").removeClass("highlight");
       });
     }
   });
